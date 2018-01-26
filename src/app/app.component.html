@@ -1,0 +1,28 @@
+<div  style="color:white;" class="nav-bar">
+  <div style="padding: 0 10% 0 10%;">
+  <nav class="navbar navbar-toggleable-md navbar-dark bg-dark" >
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href=""><img src="http://media.bani.md/image/201502/640x360/bani_1fd9cc087d88075343131f57e78604b9.jpg" style="height: 50px;width: 70px"></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+            </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <label style="margin-right: 50px">log out</label>
+        <select id="limba" style="margin-right: 50px">
+          <option value="md">Md</option>
+          <option value="ru">Ru</option>
+          <option value="en">En</option>
+        </select>
+      </form>
+    </div>
+  </nav>
+  </div>
+</div>
+<div style="padding: 0 10% 0 10%">
+  <app-step1 *ngIf="this.i==1"></app-step1>
+  <app-step2 *ngIf="this.i==1"></app-step2>
+
+
+</div>

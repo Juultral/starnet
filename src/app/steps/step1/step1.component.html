@@ -1,0 +1,54 @@
+<div class="row" style="height: 50px;margin-top: 2%;margin-bottom: 2%">
+  <div class="col-3" ></div>
+  <div class="col-6" style="background-color: white"></div>
+  <div class="col-3"></div>
+</div>
+<div class="row" >
+	<div class="col-3"></div>
+	<div class="col-6" style="background-color: white;padding: 20px">
+		<form>
+		<div class="row">
+		  <div class="form-group" class="col-6" >
+		  	<label style="border-left: 3px green solid;padding-left:5px ">LOCATION INFO</label><br>
+		    <label class="label">Denumirea juridica</label>
+		    <input type="text" class="form-control" style="font-size: 12px" readonly="">
+		    <label class="label">Denumirea comerciala</label>
+		    <input type="text" class="form-control" style="font-size: 12px" maxlength="50" required>
+		    <label class="label">Categorie</label>
+		    <select class="form-control" style="font-size: 12px"></select>
+		    <label class="label">Description RO</label>
+		    <textarea class="form-control" style="font-size: 12px;height: 75px;resize: none;" maxlength="250" required></textarea><br>
+		  </div>
+		  <div class="col-6">
+		  	<label class="label" style="margin-top: 40.5%">Reduceri StarNet</label>
+		    <div class="input-group" >
+			  <input style="font-size:12px" min="7" max="100" type="number" class="form-control" aria-describedby="basic-addon2">
+			  <span style="font-size:12px" class="input-group-addon" id="basic-addon2">%</span>
+			  <label class="custom-control custom-checkbox check-box" >
+				  <input type="checkbox" class="custom-control-input">
+				  <span class="custom-control-indicator"></span>
+				  <span class="custom-control-description">Activare bronari</span>
+			</label>
+			</div>
+			<label class="label">Selectati suma medie a comenzii unice</label>
+		    <select class="form-control" style="font-size: 12px">
+		    	<option selected="">150-200 Lei</option>
+		    </select>
+		    <label class="label">Description RU</label>
+		    <textarea class="form-control" style="font-size: 12px;height: 75px;resize: none;" maxlength="250" required></textarea><br>
+		    <div class="row">
+		    	<div class="col-6">
+				    <input type="reset"  style="background-color: grey;width: 100%" value="Cancel" class="btn btn-secondary btn-sm">
+				</div>
+				<div class="col-6">
+				    <button type="button" class="btn btn-success btn-sm" style="width: 100%" (click)="next()">Next</button>
+				</div>
+			</div>
+		  </div>
+		</div>
+	</form>
+	</div>
+	<div class="col-3"></div>
+
+</div>
+
