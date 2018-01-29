@@ -5,7 +5,6 @@ import { Component, Input, Output, OnInit} from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-
 export class AppComponent {
 	i;
 	ngOnInit(){this.i=1;}
