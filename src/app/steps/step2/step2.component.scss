@@ -1,4 +1,5 @@
 .label{
+	height: 25px;
 	font-size: 14px;
 	margin-top: 11px;
 }
@@ -11,6 +12,38 @@
 }
 .input{
 	font-size: 14px;
-	height: 20px;
+	height: 25px;
 	margin: 20px 0 20px 0;
+}
+.buttons{
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+.step_2_btn_open{
+	width: 100%;
+	border:1px solid black;
+	border-right: 0px; 
+	background-color: white;
+	color:grey;
+}
+.step_2_btn_open:active{
+	background-color: green;
+}
+.step_2_btn_close{
+	width: 100%;
+	border:1px solid black;
+	border-left: 0px;
+	border-right: 0px;  
+	background-color: white;
+	color:grey;
+}
+.step_2_btn_24{
+	width: 100%;
+	border:1px solid black;
+	border-left: 0px; 
+	background-color: white;
+	color:grey;
 }

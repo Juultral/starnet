@@ -20,9 +20,41 @@
   </nav>
   </div>
 </div>
-<div style="padding: 0 10% 0 10%">
-  <app-step1 *ngIf="this.i==1"></app-step1>
-  <app-step2 *ngIf="this.i==1"></app-step2>
+<div style="padding: 0 10% 0 10%" >
+    <div [hidden]="i!=1">
+      <app-step1 ></app-step1>
+      <div class="row" >
+            <div class="col-6 offset-3" > 
+              <div class="row" style="background-color: white;padding-bottom: 5%">
+            <div class="col-3 offset-6">
+                <input type="reset"  style="background-color: grey;width: 100%" value="Cancel" class="btn btn-secondary btn-sm">
+            </div>
 
+          <div class="col-3 ">
+              <button type="button" class="btn btn-success btn-sm" style="width: 100%" (click)="next()">Next</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+      <div [hidden]="i!=2">
+        <app-step2 ></app-step2>
+          <div class="row" >
+            <div class="col-6 offset-3">
+              <div class="row" style="background-color: white;padding-bottom: 5%">
+                <div class="col-3 offset-3">
+                  <button type="button" class="btn btn-sm" style="background-color:#b3b3b3;width: 100%" (click)="back()">Back</button>
+                </div>
+            <div class="col-3">
+                <input type="reset"  style="background-color: grey;width: 100%" value="Cancel" class="btn btn-secondary btn-sm">
+            </div>
+
+          <div class="col-3 ">
+              <button type="button" class="btn btn-success btn-sm" style="width: 100%" (click)="next()">Next</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
 
 </div>
